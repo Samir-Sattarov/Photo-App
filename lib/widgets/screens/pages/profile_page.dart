@@ -12,7 +12,7 @@ class ProfilePage extends StatelessWidget {
         body: SingleChildScrollView(
       child: Container(
         margin: EdgeInsets.only(left: 16, right: 16, top: 50),
-        width: 343,
+        width: double.infinity,
         child: Column(
           children: [
             Center(

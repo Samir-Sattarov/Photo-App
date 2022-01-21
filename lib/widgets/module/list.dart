@@ -2,76 +2,62 @@ import 'class.dart';
 
 List<GridImages> gridImages = [
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/911/205/312/artwork-digital-art-landscape-river-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/591/300/904/mountains-minimalism-forest-firewatch-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/919/575/783/nature-landscape-lake-mountains-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/367/252/59/5bd3350aedb54-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/335/245/294/nature-landscape-green-lake-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/816/62/518/digital-art-nature-trees-mountains-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/347/523/673/nature-landscape-sunlight-forest-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/414/126/559/5bd334f8d938f-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/816/62/518/digital-art-nature-trees-mountains-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/670/961/282/dubai-skyline-starry-sky-at-night-ultra-hd-wallpapers-for-android-mobile-phones-tablet-and-laptop-1920%C3%971080-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/908/576/938/nature-landscape-mountains-trees-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/542/842/420/stars-mountains-nebula-landscape-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/883/351/819/nature-landscape-fall-road-wallpaper-preview.jpg'),
+      'https://c0.wallpaperflare.com/preview/652/943/804/close-up-fresh-freshness-garden-thumbnail.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/428/376/851/forest-4k-desktop-background-hd-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/913/996/866/lofoten-norway-the-fishing-village-of-reine-at-dusk-hd-wallpapers-for-tablets-mobile-phones-laptops-and-desktop-3840%C3%972160-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/803/347/759/anime-natural-light-landscape-forest-studio-ghibli-hd-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/79/444/1019/microsoft-windows-windows-10-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/283/746/453/road-forest-trees-green-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/788/765/277/nature-landscape-mountains-mist-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/908/148/844/nature-landscape-mountains-trees-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/49/453/202/dragon-ball-z-dragon-ball-artwork-dragon-wallpaper-thumb.jpg'),
   GridImages(
-      'https://c4.wallpaperflare.com/wallpaper/685/769/272/artwork-painting-digital-art-asian-architecture-wallpaper-preview.jpg'),
+      'https://c4.wallpaperflare.com/wallpaper/325/997/284/chains-landscape-tera-online-digital-art-wallpaper-thumb.jpg'),
 ];
 
 List<MainPhotoData> mainPhoto = [
   // MainPhotoData(img: img, name: name, id: id, avatarImage: avatarImage)
   MainPhotoData(
-    avatarImage:
-        'https://c4.wallpaperflare.com/wallpaper/821/474/570/avicii-wallpaper-preview.jpg',
+    img:
+        'https://c4.wallpaperflare.com/wallpaper/504/386/358/video-game-art-video-games-artwork-the-last-of-us-ii-wallpaper-thumb.jpg',
     name: 'Ridhwan Nordin',
     id: '@ridzjcob',
-    img:
-        'https://c4.wallpaperflare.com/wallpaper/144/949/164/nature-photography-landscape-road-wallpaper-preview.jpg',
+    avatarImage:
+        'https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-thumb.jpg',
   ),
   MainPhotoData(
       img:
-          'https://c4.wallpaperflare.com/wallpaper/250/869/141/road-depth-of-field-nature-bench-wallpaper-preview.jpg',
+          'https://c4.wallpaperflare.com/wallpaper/495/241/90/acrylic-texture-design-color-wallpaper-thumb.jpg',
       name: 'Clem Onojeghuo',
       id: '@clemono2',
       avatarImage:
-          'https://c4.wallpaperflare.com/wallpaper/25/792/1008/anonymous-background-desktop-wallpaper-preview.jpg'),
+          'https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-thumb.jpg'),
   MainPhotoData(
       img:
-          'https://c4.wallpaperflare.com/wallpaper/621/346/512/red-forest-wallpaper-preview.jpg',
+          'https://c4.wallpaperflare.com/wallpaper/301/713/298/the-mandalorian-star-wars-baby-yoda-fantasy-art-hd-wallpaper-thumb.jpg',
       name: 'Jon Tyson',
       id: '@jontyson',
       avatarImage:
-          'https://c4.wallpaperflare.com/wallpaper/539/248/869/nissan-skyline-nissan-nissan-gtr-2000gt-wallpaper-preview.jpg'),
+          'https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-thumb.jpg'),
   MainPhotoData(
       img:
-          'https://c4.wallpaperflare.com/wallpaper/299/926/379/forest-illustration-wallpaper-preview.jpg',
+          'https://c4.wallpaperflare.com/wallpaper/760/708/868/spider-man-miles-morales-spider-man-into-the-spider-verse-wallpaper-thumb.jpg',
       name: 'Simon Zhu',
       id: '@smnzhu',
       avatarImage:
-          'https://c4.wallpaperflare.com/wallpaper/170/119/820/muscle-cars-dodge-charger-burnout-dodge-wallpaper-preview.jpg'),
-  MainPhotoData(
-      img:
-          'https://c4.wallpaperflare.com/wallpaper/355/537/288/fantasy-art-anime-forest-princess-mononoke-wallpaper-preview.jpg',
-      name: 'Elon Musk',
-      id: '@elonmusk',
-      avatarImage:
-          'https://c4.wallpaperflare.com/wallpaper/991/239/794/tony-stark-iron-man-iron-man-3-glowing-wallpaper-preview.jpg'),
-  MainPhotoData(
-      img:
-          'https://c4.wallpaperflare.com/wallpaper/406/189/125/digital-art-pixel-art-pixelated-pixels-wallpaper-preview.jpg',
-      name: 'Mark Zuckerberg',
-      id: '@markzuckerberg',
-      avatarImage:
-          'https://c4.wallpaperflare.com/wallpaper/575/784/986/liberty-walk-car-nissan-nissan-gt-r-wallpaper-preview.jpg'),
+          'https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-thumb.jpg'),
 ];
 
 List<ChatModel> items = [

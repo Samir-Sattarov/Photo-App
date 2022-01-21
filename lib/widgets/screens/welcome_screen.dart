@@ -12,7 +12,7 @@ class WelcomeScreen extends StatelessWidget {
         decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage('assets/welcome-background.jpg'),
+            image: AssetImage('assets/img/welcome-background.jpg'),
           ),
         ),
         child: Column(
@@ -22,7 +22,7 @@ class WelcomeScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
               child: User(
                 avatarImg:
-                    'https://c4.wallpaperflare.com/wallpaper/445/729/175/golden-eagle-eagle-bird-fauna-wallpaper-preview.jpg',
+                    'https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-thumb.jpg',
                 name: 'Pawel Czerwinski',
                 id: '@pawel_czerwinski',
               ),

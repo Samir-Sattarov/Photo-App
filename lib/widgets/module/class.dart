@@ -29,11 +29,14 @@ class User extends StatelessWidget {
             Text(
               '$name',
               style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Robolo'),
             ),
-            Text(id),
+            Text(
+              id,
+              style: TextStyle(fontFamily: 'Robolo'),
+            ),
           ],
         ),
       ],
@@ -66,7 +69,8 @@ class ButtonWidget extends StatelessWidget {
       onPressed: function,
       child: Text(
         '$txt'.toUpperCase(),
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+        style: TextStyle(
+            fontWeight: FontWeight.bold, fontSize: 16, fontFamily: 'Robolo'),
       ),
       style: ElevatedButton.styleFrom(
         onPrimary: txtColor,
@@ -88,7 +92,8 @@ class ScreenTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       '$txt',
-      style: TextStyle(fontSize: 36, fontWeight: FontWeight.w400),
+      style: TextStyle(
+          fontSize: 36, fontWeight: FontWeight.w400, fontFamily: 'Comfortaa'),
     );
   }
 }

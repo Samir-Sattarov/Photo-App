@@ -60,7 +60,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/welcome-background.jpg
+    - assets/img/welcome-background.jpg
+    - assets/img/car.jpg
+    - assets/img/car1.jpg
+    - assets/img/human.jpg
+    - assets/img/human1.jpg
+   
+
+  
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -74,17 +82,28 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Robolo
+      fonts:
+        - asset: fonts/robolo/Roboto-Black.ttf
+        - asset: fonts/robolo/Roboto-Bold.ttf
+        - asset: fonts/robolo/Roboto-Light.ttf
+        - asset: fonts/robolo/Roboto-Medium.ttf
+        - asset: fonts/robolo/Roboto-Regular.ttf
+        - asset: fonts/robolo/Roboto-Thin.ttf
+    - family: Comfortaa
+      fonts:
+        - asset: fonts/comfortaa/Comfortaa-Bold.ttf
+        - asset: fonts/comfortaa/Comfortaa-Light.ttf
+        - asset: fonts/comfortaa/Comfortaa-Medium.ttf
+        - asset: fonts/comfortaa/Comfortaa-Regular.ttf
+        - asset: fonts/comfortaa/Comfortaa-SemiBold.ttf
+        - asset: fonts/comfortaa/Comfortaa-VariableFont_wght.ttf
+
+        
+        # - asset: fonts/Schyler-Italic.ttf
+          # style: italic
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

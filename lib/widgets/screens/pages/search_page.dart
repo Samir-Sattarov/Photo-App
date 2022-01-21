@@ -11,7 +11,6 @@ class SearchPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.only(left: 16, right: 16, top: 50),
-          width: 343,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

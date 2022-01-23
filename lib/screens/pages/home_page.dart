@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:getwidget/components/avatar/gf_avatar.dart';
+
 import 'package:photo/widgets/classes.dart';
-import 'package:photo/widgets/list.dart';
-import 'chat_page.dart';
-import 'search_page.dart';
+import 'package:photo/widgets/data.dart';
+import 'package:photo/widgets/listData.dart';
 
 class HomePageWidget extends StatefulWidget {
   @override
@@ -13,20 +12,18 @@ class HomePageWidget extends StatefulWidget {
 class _HomePageWidgetState extends State<HomePageWidget> {
   @override
   Widget build(BuildContext context) {
-    int currentTapIndex = 0;
-
     return Scaffold(
       body: ListView(children: [
         Container(
-          margin: EdgeInsets.only(left: 16, right: 16, top: 50),
+          margin: const EdgeInsets.only(left: 16, right: 16, top: 50),
           width: 343,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ScreenTitle(txt: 'Discover'),
-              SizedBox(height: 32),
-              CategoryTitle(txt: 'What’s new today'),
-              SizedBox(height: 24),
+              const ScreenTitle(txt: 'Discover'),
+              const SizedBox(height: 32),
+              const CategoryTitle(txt: 'What’s new today'),
+              const SizedBox(height: 24),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -36,7 +33,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               ),
               SizedBox(height: 48),
               CategoryTitle(txt: 'Browse all'),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               GridView(
                 physics: NeverScrollableScrollPhysics(),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -62,81 +59,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           ),
         ),
       ]),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        enableFeedback: true,
-        unselectedLabelStyle: TextStyle(color: Colors.black),
-        unselectedItemColor: Colors.black54,
-        selectedItemColor: Colors.black87,
-        selectedIconTheme: IconThemeData(color: Colors.black),
-        type: BottomNavigationBarType.fixed,
-        currentIndex: currentTapIndex,
-        items: [
-          BottomNavigationBarItem(
-            label: ' ',
-            icon: Icon(
-              Icons.home_outlined,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: ' ',
-            icon: Icon(
-              Icons.search_outlined,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: ' ',
-            icon: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                  colors: [
-                    Color(0xffFF00D6),
-                    Color(0xffFF4D00),
-                  ],
-                ),
-                borderRadius: BorderRadius.circular(30),
-              ),
-              width: 200,
-              height: 30,
-              child: Icon(
-                Icons.add,
-                color: Colors.white,
-              ),
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: ' ',
-            icon: Icon(
-              Icons.chat_outlined,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: ' ',
-            icon: Icon(
-              Icons.person_outline,
-            ),
-          ),
-        ],
-        onTap: (index) {
-          setState(() {
-            currentTapIndex = index;
-            if (currentTapIndex == 0) {
-              Navigator.pushNamed(context, '/home');
-            } else if (currentTapIndex == 1) {
-              Navigator.pushNamed(context, '/search');
-            } else if (currentTapIndex == 2) {
-              print('object');
-            } else if (currentTapIndex == 3) {
-              Navigator.pushNamed(context, '/chat');
-            } else if (currentTapIndex == 4) {
-              Navigator.pushNamed(context, '/profile');
-            }
-          });
-        },
-      ),
     );
   }
 }

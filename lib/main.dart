@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'main_screen.dart';
+// -- Screens --//
 import 'screens/login_screen.dart';
 import 'screens/main_register_screen.dart';
 import 'screens/pages/chat_page.dart';
@@ -24,17 +26,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.brown,
       ),
-      initialRoute: '/login',
+      initialRoute: '/main',
       routes: {
-        '/welcome': (context) => WelcomeScreen(),
+        '/main': (ctx) => MainScreen(),
+
+        // MainScreen()
+        '/welcome': (ctx) => WelcomeScreen(),
         '/registerFirst': (ctx) => FirstRegisterScreen(),
-        '/registerSecond': (context) => SecondRegisterScreen(),
-        '/login': (context) => LoginScreen(),
-        '/home': (context) => HomePageWidget(),
-        '/search': (context) => SearchPage(),
-        '/chat': (context) => ChatsPage(),
-        '/chatview': (context) => ChatViewPage(),
-        '/profile': (context) => ProfilePage(),
+        '/registerSecond': (ctx) => SecondRegisterScreen(),
+        '/login': (ctx) => LoginScreen(),
+        '/home': (ctx) => HomePageWidget(),
+        '/search': (ctx) => SearchPage(),
+        '/chat': (ctx) => ChatsPage(),
+        '/chatview': (ctx) => ChatViewPage(),
+        '/profile': (ctx) => ProfilePage(),
       },
     );
   }

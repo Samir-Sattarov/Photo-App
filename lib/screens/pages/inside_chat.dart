@@ -6,18 +6,19 @@ class ChatViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          iconTheme: IconThemeData(color: Colors.black),
           elevation: 1,
           backgroundColor: Colors.white,
           title: Text(
-            'Chats',
+            'James',
             style: TextStyle(color: Colors.black),
           ),
           centerTitle: true,
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            SizedBox(height: 30),
             Column(
               children: [
                 Row(
@@ -30,14 +31,16 @@ class ChatViewPage extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.grey[300],
+                        color: Colors.grey[100],
                       ),
                       width: 269,
                       height: 80,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                            'Really love your most recent photo. I’ve been trying to capture the same thing for a few months and would love some tips!'),
+                          'Really love your most recent photo. I’ve been trying to capture the same thing for a few months and would love some tips!',
+                          style: TextStyle(fontFamily: 'Robolo'),
+                        ),
                       ),
                     ),
                   ],
@@ -51,14 +54,16 @@ class ChatViewPage extends StatelessWidget {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.grey[300],
+                    color: Colors.grey[100],
                   ),
                   width: 269,
                   height: 80,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                        'A fast 50mm like f1.8 would help with the bokeh. I’ve been using primes as they tend to get a bit sharper images.'),
+                      'A fast 50mm like f1.8 would help with the bokeh. I’ve been using primes as they tend to get a bit sharper images.',
+                      style: TextStyle(fontFamily: 'Robolo'),
+                    ),
                   ),
                 ),
                 SizedBox(width: 5),
@@ -81,7 +86,7 @@ class ChatViewPage extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.grey[300],
+                        color: Colors.grey[100],
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),

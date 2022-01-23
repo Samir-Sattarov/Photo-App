@@ -59,7 +59,6 @@ const List<MainPhotoData> mainPhoto = [
       avatarImage:
           'https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-thumb.jpg'),
 ];
-
 List<ChatModel> items = [
   ChatModel(
       name: 'Robert',
@@ -85,64 +84,4 @@ List<ChatModel> items = [
       time: 'Dec 10',
       profileurl:
           'https://static.vecteezy.com/system/resources/previews/002/002/280/non_2x/old-man-with-beard-wearing-glasses-avatar-character-free-vector.jpg'),
-  ChatModel(
-      name: 'Marshal',
-      message: 'Привет как дела?',
-      time: '2:11',
-      profileurl:
-          'https://cdn3.vectorstock.com/i/thumb-large/84/92/profile-icon-male-head-in-chat-bubble-isolated-vector-23798492.jpg'),
-  ChatModel(
-      name: 'Jacob',
-      message: 'Привет как дела?',
-      time: 'March 17',
-      profileurl:
-          'https://static.vecteezy.com/system/resources/previews/002/002/332/non_2x/ablack-man-avatar-character-isolated-icon-free-vector.jpg'),
-  ChatModel(
-      name: 'Robert',
-      message: 'Привет, как дела?)',
-      time: '10:39',
-      profileurl:
-          'https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg'),
-  ChatModel(
-      name: 'Stive',
-      message: "I'm from Dubai",
-      time: '6:14',
-      profileurl:
-          'https://image.freepik.com/free-vector/farmer-using-technology-digital-agriculture_53876-113813.jpg'),
-  ChatModel(
-      name: 'Elon',
-      message: "What's up?",
-      time: 'Feb 12',
-      profileurl:
-          'https://static.vecteezy.com/system/resources/previews/002/002/341/non_2x/man-wearing-sunglasses-avatar-character-isolated-icon-free-vector.jpg'),
-  ChatModel(
-      name: 'Matthew',
-      message: "I'm on the beach",
-      time: '2:34',
-      profileurl:
-          'https://static.vecteezy.com/system/resources/previews/002/002/427/non_2x/man-avatar-character-isolated-icon-free-vector.jpg'),
-  ChatModel(
-      name: 'Michael',
-      message: "I'm Iron Man",
-      time: 'Dec 10',
-      profileurl:
-          'https://static.vecteezy.com/system/resources/previews/002/002/280/non_2x/old-man-with-beard-wearing-glasses-avatar-character-free-vector.jpg'),
-  ChatModel(
-      name: 'Doctor',
-      message: 'How are you?',
-      time: '3:14',
-      profileurl:
-          'https://static.vecteezy.com/system/resources/previews/004/492/559/non_2x/real-people-portraits-hand-drawn-flat-style-design-concept-illustration-of-men-male-faces-and-shoulders-avatars-flat-style-icons-set-modern-beautiful-avatar-of-man-vector.jpg'),
-  ChatModel(
-      name: 'Marshal',
-      message: 'Привет как дела?',
-      time: '2:11',
-      profileurl:
-          'https://cdn3.vectorstock.com/i/thumb-large/84/92/profile-icon-male-head-in-chat-bubble-isolated-vector-23798492.jpg'),
-  ChatModel(
-      name: 'Jacob',
-      message: 'Привет как дела?',
-      time: 'March 17',
-      profileurl:
-          'https://static.vecteezy.com/system/resources/previews/002/002/332/non_2x/ablack-man-avatar-character-isolated-icon-free-vector.jpg'),
 ];

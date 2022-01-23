@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/components/avatar/gf_avatar.dart';
 import 'package:photo/widgets/classes.dart';
-import 'package:photo/widgets/list.dart';
+import 'package:photo/widgets/listData.dart';
 
 import 'home_page.dart';
 

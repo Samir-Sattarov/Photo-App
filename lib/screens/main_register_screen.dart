@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:photo/widgets/module/class.dart';
-import 'package:photo/widgets/screens/welcome_screen.dart';
+import 'package:photo/widgets/classes.dart';
 
 class FirstRegisterScreen extends StatelessWidget {
   @override

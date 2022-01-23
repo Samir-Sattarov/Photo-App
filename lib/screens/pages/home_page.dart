@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/components/avatar/gf_avatar.dart';
-import 'package:photo/widgets/module/class.dart';
-import 'package:photo/widgets/module/list.dart';
-import 'package:photo/widgets/screens/pages/profile_page.dart';
-import 'package:photo/widgets/screens/welcome_screen.dart';
-
+import 'package:photo/widgets/classes.dart';
+import 'package:photo/widgets/list.dart';
 import 'chat_page.dart';
 import 'search_page.dart';
 

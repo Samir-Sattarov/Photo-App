@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:photo/widgets/module/class.dart';
+import 'package:photo/widgets/classes.dart';
+import 'package:photo/widgets/data.dart';
 
 import 'main_register_screen.dart';
 import 'welcome_screen.dart';

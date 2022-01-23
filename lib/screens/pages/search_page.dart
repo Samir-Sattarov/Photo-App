@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:photo/widgets/module/class.dart';
-import 'package:photo/widgets/module/list.dart';
+import 'package:photo/widgets/classes.dart';
+import 'package:photo/widgets/data.dart';
+import 'package:photo/widgets/list.dart';
 
 import 'home_page.dart';
 

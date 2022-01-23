@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:photo/widgets/module/list.dart';
+import 'package:photo/widgets/list.dart';
 
 class ChatsPage extends StatelessWidget {
   @override

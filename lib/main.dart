@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:photo/widgets/screens/pages/chat_page.dart';
-import 'package:photo/widgets/screens/pages/inside_chat.dart';
-import 'package:photo/widgets/screens/pages/profile_page.dart';
-import 'package:photo/widgets/screens/pages/search_page.dart';
-import 'widgets/screens/login_screen.dart';
-import 'widgets/screens/main_register_screen.dart';
-import 'widgets/screens/pages/home_page.dart';
-import 'widgets/screens/second_register_screen.dart';
-import 'widgets/screens/welcome_screen.dart';
+import 'screens/login_screen.dart';
+import 'screens/main_register_screen.dart';
+import 'screens/pages/chat_page.dart';
+import 'screens/pages/home_page.dart';
+import 'screens/pages/inside_chat.dart';
+import 'screens/pages/profile_page.dart';
+import 'screens/pages/search_page.dart';
+import 'screens/second_register_screen.dart';
+import 'screens/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.brown,
       ),
-      initialRoute: '/logind',
+      initialRoute: '/login',
       routes: {
         '/welcome': (context) => WelcomeScreen(),
         '/registerFirst': (ctx) => FirstRegisterScreen(),

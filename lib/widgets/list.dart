@@ -1,4 +1,4 @@
-import 'class.dart';
+import 'data.dart';
 
 List<GridImages> gridImages = [
   GridImages(
@@ -27,7 +27,7 @@ List<GridImages> gridImages = [
       'https://c4.wallpaperflare.com/wallpaper/325/997/284/chains-landscape-tera-online-digital-art-wallpaper-thumb.jpg'),
 ];
 
-List<MainPhotoData> mainPhoto = [
+const List<MainPhotoData> mainPhoto = [
   // MainPhotoData(img: img, name: name, id: id, avatarImage: avatarImage)
   MainPhotoData(
     img:

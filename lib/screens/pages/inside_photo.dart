@@ -11,7 +11,7 @@ class InsidePhotoPage extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
             image: NetworkImage(
@@ -19,7 +19,7 @@ class InsidePhotoPage extends StatelessWidget {
           ),
         ),
         child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [Colors.black, Colors.transparent],
                 begin: Alignment.topCenter,
@@ -35,7 +35,7 @@ class InsidePhotoPage extends StatelessWidget {
                       Expanded(
                         child: Row(
                           children: [
-                            GFAvatar(
+                            const GFAvatar(
                               radius: 18,
                               backgroundImage: NetworkImage(
                                   'https://c4.wallpaperflare.com/wallpaper/694/865/147/space-art-fantasy-art-sky-clouds-wallpaper-thumb.jpg'),
@@ -43,10 +43,10 @@ class InsidePhotoPage extends StatelessWidget {
                             const SizedBox(width: 8),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
+                              children: const [
                                 Text(
                                   'Ridhwan Nordin',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
@@ -67,7 +67,7 @@ class InsidePhotoPage extends StatelessWidget {
                         onPressed: () {
                           Navigator.pop(context);
                         },
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.close,
                           color: Colors.white,
                         ),

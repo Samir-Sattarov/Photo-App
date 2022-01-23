@@ -25,6 +25,30 @@ List<GridImages> gridImages = [
       'https://c4.wallpaperflare.com/wallpaper/49/453/202/dragon-ball-z-dragon-ball-artwork-dragon-wallpaper-thumb.jpg'),
   GridImages(
       'https://c4.wallpaperflare.com/wallpaper/325/997/284/chains-landscape-tera-online-digital-art-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/591/300/904/mountains-minimalism-forest-firewatch-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/367/252/59/5bd3350aedb54-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/816/62/518/digital-art-nature-trees-mountains-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/414/126/559/5bd334f8d938f-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/670/961/282/dubai-skyline-starry-sky-at-night-ultra-hd-wallpapers-for-android-mobile-phones-tablet-and-laptop-1920%C3%971080-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/542/842/420/stars-mountains-nebula-landscape-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c0.wallpaperflare.com/preview/652/943/804/close-up-fresh-freshness-garden-thumbnail.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/913/996/866/lofoten-norway-the-fishing-village-of-reine-at-dusk-hd-wallpapers-for-tablets-mobile-phones-laptops-and-desktop-3840%C3%972160-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/79/444/1019/microsoft-windows-windows-10-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/788/765/277/nature-landscape-mountains-mist-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/49/453/202/dragon-ball-z-dragon-ball-artwork-dragon-wallpaper-thumb.jpg'),
+  GridImages(
+      'https://c4.wallpaperflare.com/wallpaper/325/997/284/chains-landscape-tera-online-digital-art-wallpaper-thumb.jpg'),
 ];
 
 const List<MainPhotoData> mainPhoto = [

@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:photo/screens/pages/inside_photo.dart';
 
-import 'screens/login_screen.dart';
-import 'screens/main_register_screen.dart';
 import 'screens/pages/chat_page.dart';
 import 'screens/pages/home_page.dart';
-import 'screens/pages/inside_chat.dart';
 import 'screens/pages/profile_page.dart';
 import 'screens/pages/search_page.dart';
-import 'screens/second_register_screen.dart';
-import 'screens/welcome_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -21,10 +17,10 @@ class _MainScreenState extends State<MainScreen> {
   int _currentTapIndex = 0;
 
   final tabs = <Widget>[
-    HomePageWidget(),
-    SearchPage(),
-    ChatViewPage(),
-    ChatsPage(),
+    const HomePageWidget(),
+    const SearchPage(),
+    const InsidePhotoPage(),
+    const ChatsPage(),
     ProfilePage(),
   ];
 
@@ -36,20 +32,20 @@ class _MainScreenState extends State<MainScreen> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         enableFeedback: true,
-        unselectedLabelStyle: TextStyle(color: Colors.black),
+        unselectedLabelStyle: const TextStyle(color: Colors.black),
         unselectedItemColor: Colors.black54,
         selectedItemColor: Colors.black87,
-        selectedIconTheme: IconThemeData(color: Colors.black),
+        selectedIconTheme: const IconThemeData(color: Colors.black),
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentTapIndex,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             label: ' ',
             icon: Icon(
               Icons.home_outlined,
             ),
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             label: ' ',
             icon: Icon(
               Icons.search_outlined,
@@ -59,9 +55,9 @@ class _MainScreenState extends State<MainScreen> {
             label: ' ',
             icon: Container(
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
+                  end: Alignment.center,
                   colors: [
                     Color(0xffFF00D6),
                     Color(0xffFF4D00),
@@ -71,19 +67,17 @@ class _MainScreenState extends State<MainScreen> {
               ),
               width: 200,
               height: 50,
-              child: Icon(
+              child: const Icon(
                 Icons.add,
                 color: Colors.white,
               ),
             ),
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             label: ' ',
-            icon: Icon(
-              Icons.chat_outlined,
-            ),
+            icon: Icon(Icons.message_outlined),
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             label: ' ',
             icon: Icon(
               Icons.person_outline,

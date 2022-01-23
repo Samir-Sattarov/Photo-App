@@ -6,6 +6,7 @@ import 'screens/main_register_screen.dart';
 import 'screens/pages/chat_page.dart';
 import 'screens/pages/home_page.dart';
 import 'screens/pages/inside_chat.dart';
+import 'screens/pages/inside_photo.dart';
 import 'screens/pages/profile_page.dart';
 import 'screens/pages/search_page.dart';
 import 'screens/second_register_screen.dart';
@@ -24,20 +25,19 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: 'Roboto',
         primarySwatch: Colors.brown,
       ),
       initialRoute: '/main',
       routes: {
-        '/main': (ctx) => MainScreen(),
-
-        // MainScreen()
+        '/main': (ctx) => const MainScreen(),
         '/welcome': (ctx) => WelcomeScreen(),
         '/registerFirst': (ctx) => FirstRegisterScreen(),
-        '/registerSecond': (ctx) => SecondRegisterScreen(),
+        '/registerSecond': (ctx) => const SecondRegisterScreen(),
         '/login': (ctx) => LoginScreen(),
-        '/home': (ctx) => HomePageWidget(),
-        '/search': (ctx) => SearchPage(),
-        '/chat': (ctx) => ChatsPage(),
+        '/photoview': (ctx) => const InsidePhotoPage(),
+        '/search': (ctx) => const SearchPage(),
+        '/chat': (ctx) => const ChatsPage(),
         '/chatview': (ctx) => ChatViewPage(),
         '/profile': (ctx) => ProfilePage(),
       },

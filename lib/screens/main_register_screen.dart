@@ -6,25 +6,25 @@ class FirstRegisterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      margin: EdgeInsets.only(left: 16, right: 16, top: 80),
+      margin: const EdgeInsets.only(left: 16, right: 16, top: 80),
       width: 343,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const ScreenTitle(txt: 'Register'),
-          SizedBox(height: 32),
-          TextFieldWidget(
+          const SizedBox(height: 32),
+          const TextFieldWidget(
             hide: false,
             hintTxt: 'Email@gmail.com',
             keyboard: TextInputType.emailAddress,
           ),
-          SizedBox(height: 16),
-          TextFieldWidget(
+          const SizedBox(height: 16),
+          const TextFieldWidget(
             hide: true,
             hintTxt: 'Password',
             keyboard: TextInputType.emailAddress,
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           ButtonWidget(
               weight: double.infinity,
               height: 52,

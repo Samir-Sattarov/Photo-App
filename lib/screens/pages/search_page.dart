@@ -6,27 +6,30 @@ import 'package:photo/widgets/listData.dart';
 import 'home_page.dart';
 
 class SearchPage extends StatelessWidget {
+  const SearchPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(left: 16, right: 16, top: 50),
+          margin: const EdgeInsets.only(left: 16, right: 16, top: 50),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const ScreenTitle(txt: 'Search'),
-              SizedBox(height: 32),
-              TextFieldWidget(
+              const SizedBox(height: 32),
+              const TextFieldWidget(
                 hide: false,
                 hintTxt: 'Search all photosm',
                 keyboard: TextInputType.text,
               ),
-              SizedBox(height: 32),
-              CategoryTitle(txt: 'All results'),
-              SizedBox(height: 24),
+              const SizedBox(height: 32),
+              const CategoryTitle(txt: 'All results'),
+              const SizedBox(height: 24),
               GridView(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                physics: NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
                     crossAxisSpacing: 9,
                     mainAxisSpacing: 9,
@@ -36,7 +39,7 @@ class SearchPage extends StatelessWidget {
                     .toList(),
                 shrinkWrap: true,
               ),
-              SizedBox(height: 32),
+              const SizedBox(height: 32),
               ButtonWidget(
                   weight: double.infinity,
                   height: 52,
@@ -44,7 +47,7 @@ class SearchPage extends StatelessWidget {
                   txtColor: Colors.black,
                   txt: 'See more',
                   function: () {}),
-              SizedBox(height: 32),
+              const SizedBox(height: 32),
             ],
           ),
         ),

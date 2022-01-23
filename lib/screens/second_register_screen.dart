@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:photo/widgets/classes.dart';
 
-import 'main_register_screen.dart';
-
 class SecondRegisterScreen extends StatelessWidget {
+  const SecondRegisterScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      margin: EdgeInsets.only(left: 16, right: 16, top: 80),
+      margin: const EdgeInsets.only(left: 16, right: 16, top: 80),
       width: 343,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,12 +22,13 @@ class SecondRegisterScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           ButtonWidget(
-              weight: double.infinity,
-              height: 52,
-              backgound: Colors.black,
-              txtColor: Colors.white,
-              txt: 'Next',
-              function: () {}),
+            weight: double.infinity,
+            height: 52,
+            backgound: Colors.black,
+            txtColor: Colors.white,
+            txt: 'Next',
+            function: () {},
+          ),
         ],
       ),
     ));

@@ -5,6 +5,8 @@ import 'package:photo/widgets/data.dart';
 import 'package:photo/widgets/listData.dart';
 
 class HomePageWidget extends StatefulWidget {
+  const HomePageWidget({Key? key}) : super(key: key);
+
   @override
   State<HomePageWidget> createState() => _HomePageWidgetState();
 }
@@ -31,12 +33,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       mainPhoto.map((data) => MainPhoto(data: data)).toList(),
                 ),
               ),
-              SizedBox(height: 48),
-              CategoryTitle(txt: 'Browse all'),
+              const SizedBox(height: 48),
+              const CategoryTitle(txt: 'Browse all'),
               const SizedBox(height: 24),
               GridView(
-                physics: NeverScrollableScrollPhysics(),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 9,
                     mainAxisSpacing: 9,
@@ -44,17 +46,18 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 children: gridImages
                     .map((img) => GridPhotoWidget(data: img))
                     .toList(),
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 shrinkWrap: true,
               ),
-              SizedBox(height: 32),
+              const SizedBox(height: 32),
               ButtonWidget(
                   weight: double.infinity,
                   height: 52,
                   backgound: Colors.white,
                   txtColor: Colors.black,
                   txt: 'See more',
-                  function: () {})
+                  function: () {}),
+              const SizedBox(height: 32),
             ],
           ),
         ),
@@ -75,24 +78,26 @@ class MainPhoto extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(right: 18),
-          child: Container(
-            width: 343,
-            height: 343,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.cover, image: NetworkImage("${data.img}"))),
+          child: GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushNamed('/photoview');
+            },
+            child: Container(
+              width: 343,
+              height: 343,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.cover, image: NetworkImage(data.img))),
+            ),
           ),
         ),
-        SizedBox(height: 16),
+        const SizedBox(height: 16),
         Row(
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                User(
-                    name: '${data.name}',
-                    id: '${data.id}',
-                    avatarImg: '${data.avatarImage}')
+                User(name: data.name, id: data.id, avatarImg: data.avatarImage)
               ],
             ),
           ],
@@ -108,12 +113,12 @@ class GridPhotoWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 307,
       height: 307,
       child: Image(
         fit: BoxFit.cover,
-        image: NetworkImage('${data.img}'),
+        image: NetworkImage(data.img),
       ),
     );
   }

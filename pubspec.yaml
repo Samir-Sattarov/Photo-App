@@ -83,7 +83,7 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Robolo
+    - family: Roboto
       fonts:
         - asset: fonts/robolo/Roboto-Black.ttf
         - asset: fonts/robolo/Roboto-Bold.ttf

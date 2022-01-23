@@ -20,22 +20,21 @@ class User extends StatelessWidget {
       children: [
         GFAvatar(
           radius: 18,
-          backgroundImage: NetworkImage("$avatarImg"),
+          backgroundImage: NetworkImage(avatarImg),
         ),
         const SizedBox(width: 8),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              '$name',
-              style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Robolo'),
+              name,
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             Text(
               id,
-              style: TextStyle(fontFamily: 'Robolo'),
             ),
           ],
         ),
@@ -68,15 +67,15 @@ class ButtonWidget extends StatelessWidget {
     return ElevatedButton(
       onPressed: function,
       child: Text(
-        '$txt'.toUpperCase(),
-        style: TextStyle(
+        txt.toUpperCase(),
+        style: const TextStyle(
             fontWeight: FontWeight.bold, fontSize: 16, fontFamily: 'Robolo'),
       ),
       style: ElevatedButton.styleFrom(
         onPrimary: txtColor,
         primary: backgound, //background color of button
-        side:
-            BorderSide(width: 3, color: Colors.black), //border width and color
+        side: const BorderSide(
+            width: 3, color: Colors.black), //border width and color
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         minimumSize: Size(weight, height),
       ),
@@ -91,8 +90,8 @@ class ScreenTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      '$txt',
-      style: TextStyle(
+      txt,
+      style: const TextStyle(
           fontSize: 36, fontWeight: FontWeight.w400, fontFamily: 'Comfortaa'),
     );
   }
@@ -105,8 +104,8 @@ class CategoryTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      '$txt'.toUpperCase(),
-      style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+      txt.toUpperCase(),
+      style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
     );
   }
 }

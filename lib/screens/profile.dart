@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_grid_delegate_ext/rendering/grid_delegate.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:getwidget/components/avatar/gf_avatar.dart';
 import 'package:photo/widgets/classes.dart';
 import 'package:photo/widgets/listData.dart';
@@ -56,23 +57,62 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 32),
-            GridView(
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: XSliverGridDelegate(
-                crossAxisSpacing: 9,
-                crossAxisCount: 2,
-                smallCellExtent: 220,
-                bigCellExtent: 310,
-                isFirstCellBig: false,
+            SingleChildScrollView(
+              child: StaggeredGrid.count(
+                crossAxisCount: 4,
+                mainAxisSpacing: 4,
+                crossAxisSpacing: 4,
+                children: const [
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 2.5,
+                    child: Image(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/img/profilepictureone.png'),
+                    ),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3.5,
+                    child: Image(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/img/profilepicturethree.png'),
+                    ),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3.5,
+                    child: Image(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/img/profilepicturefour.png'),
+                    ),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3.5,
+                    child: Image(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/img/profilepicturefive.png'),
+                    ),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3.5,
+                    child: Image(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/img/profilepicturesix.png'),
+                    ),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 2.5,
+                    child: Image(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/img/profilepictureseven.png'),
+                    ),
+                  ),
+                ],
               ),
-              children: gridImagesProfile
-                  .map((img) => Padding(
-                        padding: const EdgeInsets.only(bottom: 9.0),
-                        child: GridPhotoWidget(data: img),
-                      ))
-                  .toList(),
-              padding: const EdgeInsets.all(10),
-              shrinkWrap: true,
             ),
             const SizedBox(height: 32),
             ButtonWidget(

@@ -1,7 +1,5 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import 'package:flutter_grid_delegate_ext/flutter_grid_delegate_ext.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:photo/widgets/classes.dart';
 import 'package:photo/widgets/data.dart';
 import 'package:photo/widgets/listData.dart';
@@ -47,24 +45,114 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 48),
                 const CategoryTitle(txt: 'Browse all'),
-                GridView(
-                  dragStartBehavior: DragStartBehavior.down,
-                  physics: const NeverScrollableScrollPhysics(),
-                  gridDelegate: XSliverGridDelegate(
-                    crossAxisSpacing: 9,
-                    crossAxisCount: 2,
-                    smallCellExtent: 220,
-                    bigCellExtent: 310,
-                    isFirstCellBig: false,
+                const SizedBox(height: 24),
+                SingleChildScrollView(
+                  child: StaggeredGrid.count(
+                    crossAxisCount: 4,
+                    mainAxisSpacing: 4,
+                    crossAxisSpacing: 4,
+                    children: const [
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 2.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridone.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 3.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridtwo.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 3.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridthree.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 3.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridfour.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 2.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridfive.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 2.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridsix.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 3.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridseven.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 3.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridnine.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 3.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridsix.png'),
+                        ),
+                      ),
+                      StaggeredGridTile.count(
+                        crossAxisCellCount: 2,
+                        mainAxisCellCount: 2.5,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/img/gridone.png'),
+                        ),
+                      ),
+                    ],
                   ),
-                  children: gridImages
-                      .map((img) => Padding(
-                            padding: const EdgeInsets.only(bottom: 9.0),
-                            child: GridPhotoWidget(data: img),
-                          ))
-                      .toList(),
-                  shrinkWrap: true,
                 ),
+                // GridView(
+                //   dragStartBehavior: DragStartBehavior.down,
+                //   physics: const NeverScrollableScrollPhysics(),
+                //   gridDelegate: XSliverGridDelegate(
+                //     crossAxisSpacing: 9,
+                //     crossAxisCount: 2,
+                //     smallCellExtent: 220,
+                //     bigCellExtent: 310,
+                //     isFirstCellBig: false,
+                //   ),
+                //   children: gridImages
+                //       .map((img) => Padding(
+                //             padding: const EdgeInsets.only(bottom: 9.0),
+                //             child: GridPhotoWidget(data: img),
+                //           ))
+                //       .toList(),
+                //   shrinkWrap: true,
+                // ),
                 const SizedBox(height: 32),
                 ButtonWidget(
                     weight: double.infinity,

@@ -4,7 +4,9 @@ import 'package:flutter/widgets.dart';
 class GridImages {
   final String img;
 
-  GridImages(this.img);
+  GridImages({
+    required this.img,
+  });
 }
 
 class MainPhotoData {
@@ -23,12 +25,8 @@ class MainPhotoData {
 class ChatModel {
   final String name;
   final String message;
-  final String time;
   final String profileurl;
 
   ChatModel(
-      {required this.name,
-      required this.message,
-      required this.time,
-      required this.profileurl});
+      {required this.name, required this.message, required this.profileurl});
 }

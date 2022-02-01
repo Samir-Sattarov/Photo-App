@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
@@ -20,7 +21,7 @@ class User extends StatelessWidget {
       children: [
         GFAvatar(
           radius: 18,
-          backgroundImage: NetworkImage(avatarImg),
+          backgroundImage: AssetImage(avatarImg),
         ),
         const SizedBox(width: 8),
         Column(
@@ -48,10 +49,9 @@ class ButtonWidget extends StatelessWidget {
   final double height;
   final Color backgound;
   final Color txtColor;
-
   final String txt;
+  final Function() onPresed;
 
-  final function;
   const ButtonWidget({
     Key? key,
     required this.weight,
@@ -59,23 +59,22 @@ class ButtonWidget extends StatelessWidget {
     required this.backgound,
     required this.txtColor,
     required this.txt,
-    required this.function,
+    required this.onPresed,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: function,
+      onPressed: onPresed,
       child: Text(
         txt.toUpperCase(),
         style: const TextStyle(
-            fontWeight: FontWeight.bold, fontSize: 16, fontFamily: 'Robolo'),
+            fontWeight: FontWeight.bold, fontSize: 16, fontFamily: 'Roboto'),
       ),
       style: ElevatedButton.styleFrom(
         onPrimary: txtColor,
-        primary: backgound, //background color of button
-        side: const BorderSide(
-            width: 3, color: Colors.black), //border width and color
+        primary: backgound,
+        side: const BorderSide(width: 3, color: Colors.black),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         minimumSize: Size(weight, height),
       ),
@@ -132,7 +131,7 @@ class TextFieldWidget extends StatelessWidget {
       obscuringCharacter: "*",
       cursorColor: Colors.black,
       decoration: InputDecoration(
-        hintText: '$hintTxt',
+        hintText: hintTxt,
         focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: Colors.black, width: 3.0),
           borderRadius: BorderRadius.circular(0),

@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+./lib/screens/expample.dart
 
 # IntelliJ related
 *.iml
